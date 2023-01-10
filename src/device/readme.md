@@ -9,7 +9,17 @@ var info= DeviceInfo.getDeviceInfo({
  //var info= DeviceInfo.getDeviceInfo();//默认获取全部信息
 <!-- 通过info接收需要的浏览器信息进行后续处理  -->
 ~~~
-
+>功能模块使用
+当前js最后添加如下代码
+~~~
+export default DeviceInfo; 
+DeviceInfo.MethodLibrary.webgl();//使用示例判断浏览器是否支持webgl,或者使用类似直接引用js的配置方式调用相关功能
+~~~
+主功能导入使用
+引用该功能js使用前导入并使用相关功能模块
+~~~
+import DeviceInfo from "./device.js";
+~~~
 > ##### INFO 配置项
 |             Name             |  说明  | 属性值                                                         |
 | :--------------------------: | :----: | ------------------------------------------------------------ |
